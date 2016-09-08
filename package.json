@@ -1,0 +1,23 @@
+{
+  "name": "sample-angular-app",
+  "version": "1.0.0",
+  "description": "sample angular app",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "basic",
+    "angular",
+    "app",
+    "sample",
+    "app"
+  ],
+  "author": "Debasis Panda",
+  "license": "ISC"
+}
