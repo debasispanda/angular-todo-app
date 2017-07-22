@@ -4,7 +4,7 @@ function TodoCtrl($scope) {
   $scope.todos = [];
   $scope.markAll = false;
     
-  $scope.addTodo = function() {
+  $scope.addTodo = function(event) {
       if(event.keyCode == 13 && $scope.todoText){
           $scope.todos.push({text:$scope.todoText, done:false});
           $scope.todoText = '';

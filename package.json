@@ -8,16 +8,19 @@
     "jquery": "^1.11.0"
   },
   "devDependencies": {
+    "angular-mocks": "^1.5.8",
     "jasmine-core": "^2.6.0",
     "karma": "^1.6.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "0.0.31",
     "lite-server": "^2.3.0"
   },
   "scripts": {
     "test": "karma start",
-    "dev": "lite-server -c config/bs-config.json"
+    "start": "lite-server -c config/bs-config.json"
   },
   "keywords": [
     "basic",

@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Tue Apr 25 2017 08:47:58 GMT+0530 (India Standard Time)
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -15,7 +15,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './src/**/*spec.js'
+      './node_modules/angular/angular.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './src/js/**/*.js'
     ],
 
 
@@ -33,8 +35,20 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'kjhtml'],
-
+    reporters: [
+      'spec'
+      // 'progress', 
+      // 'kjhtml'
+    ],
+    specReporter: {
+      maxLogLines: 5,             // limit number of lines logged per test
+      suppressErrorSummary: true, // do not print error summary
+      suppressFailed: false,      // do not print information about failed tests
+      suppressPassed: false,      // do not print information about passed tests
+      suppressSkipped: false,      // do not print information about skipped tests
+      showSpecTiming: false,      // print the time elapsed for each spec
+      failFast: false              // test would finish with error when a first fail occurs. 
+    },
 
     // web server port
     port: 9876,
@@ -55,7 +69,10 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: [
+      'PhantomJS',
+      //'Chrome'
+    ],
 
 
     // Continuous Integration mode

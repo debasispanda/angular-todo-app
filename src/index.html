@@ -10,7 +10,7 @@
 			<header>
 				<h1>TODO APP</h1>
 				<input id="new-todo" type="text" ng-model="todoText"  size="30"
-				placeholder="What needs to be done?" ng-keyup="addTodo()"/>
+				placeholder="What needs to be done?" ng-keyup="addTodo($event)"/>
 			</header>
 
 			<section id="main" style="display: block;">
