@@ -10,18 +10,18 @@
 ```bash
 # clone our repo
 
-# change directory to our repo
+# Change directory to application source
 $cd angular-todo-app
 
-# add required global libraries
-$npm install http-server -g
-
-# install the repo with npm
+# Install all the dependencies and devDependencies
 $npm install
 
-# Start the http-server
-$http-server
+# Run unit test
+$npm test
+
+# Start the application. 
+$npm start
+It will automatically run the application on [http://localhost:8000](http://localhost:8000) in your browser
 
 ```
-go to [http://localhost:8080/src](http://localhost:8080/src) in your browser
 
